@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="pure-g-r content-ribbon">
+        <div class="pure-u-1">
+            <h1>Fale conosco</h1>
+            <p>Você pode entrar em contato conosco tanto por e-mail como pelas redes sociais, abaixo seguem os links para contato:</p>
+            <h4>Links</h4>
+            <ul>
+                <li>E-mail: <a href="mailto:contato@simplemooc.org">contato@simplemooc.org</a></li>
+                <li>Twitter: <a href="https://twitter.com/simplemooc">@simplemooc</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+     <div class=" content-ribbon">
+        <div class="pure-u-1">
+		    <form action="#contato" class="pure-form pure-form-aligned" method="post">
+		    	{% csrf_token %}
+		    	 
+		    	<h3> Tire Suas Duvidas</h3>
+		    	<fieldset >
+		
+
+					{% for field in form %}
+
+	    			<div class="pure-control-group">
+	    				
+	    				{{ field.label_tag }}
+	    				{{ field }}
+	    				
+	    				{% if field.errors %}
+	    					{%for error in field.errors %}
+			    				
+			    				<label> {{ error }} </label>
+			    				
+			    			{% endfor %}
+	    				{% endif %}
+
+	    				
+
+	    			</div>
+
+
+
+	    			{% endfor %}
+
+		    	</fieldset>
+
+		    	<div class="pure-controls">
+			    	<button type="submit" class="pure-button pure-button-primary">Enviar</button>
+			    </div>
+
+		    </form> 
+	    </div> 
+    </div>
+
+
+
+{% endblock %}
