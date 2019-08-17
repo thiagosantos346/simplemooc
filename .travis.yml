@@ -11,10 +11,7 @@ sudo: required
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install django
-<<<<<<< HEAD
-=======
-  - pip install django-admin
->>>>>>> 08803b14eb39997fbb51c955635c850a27685fbf
+
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
@@ -28,4 +25,3 @@ deploy:
 app: aqueous-temple-80707
 =======
 app: aqueous-temple-80707
->>>>>>> 08803b14eb39997fbb51c955635c850a27685fbf
