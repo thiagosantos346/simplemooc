@@ -1,5 +1,4 @@
 django
-django-admin
 gunicorn
 django-heroku
 Pillow
