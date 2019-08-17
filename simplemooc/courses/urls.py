@@ -7,7 +7,6 @@ app_name='courses'
 urlpatterns = [
 
     path('', views.index, name='index'),
-	path('<slug:atalho>', views.details, name='details' ),
-    #path('contato/', views.contato, name='contato'),
-    
+	path('<slug:atalho>', views.details, name='details' )
+
 ]
