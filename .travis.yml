@@ -6,12 +6,11 @@ python:
   - "3.7.3"
 
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
+sudo: required
 
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - pip install django
-
-
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script:
 - python test.py
