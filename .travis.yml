@@ -6,7 +6,6 @@ python:
   - "3.7.3"
 
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
-sudo: required
 
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
@@ -21,7 +20,6 @@ deploy:
   provider: heroku
   api-key: 
     secure: $HEROKU_API_KEY
-<<<<<<< HEAD
 app: aqueous-temple-80707
 =======
 app: aqueous-temple-80707
