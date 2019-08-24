@@ -4,9 +4,5 @@ Pillow
 PyYAML
 simplejson
 sqlparse
-system-service
-systemd-python
-ufw
-unattended-upgrades
 urllib3
 virtualenv
