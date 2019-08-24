@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'hp_f&(vkhb9!%syknk02me%1@e#@7-^!t&+u6pq5dpkqwqs#-#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['simplemoocnow.herokuapp.com']
 
 
 # Application definition
